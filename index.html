@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Best Player</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="bg-dark">
+      <div class="text-center">
+        <h1 id="head-title" class="mb-5 fw-bolder">World Most Famous Player</h1>
+        <p class="text-white">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+          doloremque <br />
+          quod, iste beatae, adipisci sint ipsam quaerat incidunt tenetur,
+          placeat <br />
+          totam voluptate provident quibusdam hic!
+        </p>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="row">
+        
+        
+        
+        
+
+        
+        
+        
+        
+      </div>
+
+
+
+
+
+
+      <!-- player -->
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="row">
+            <div class="col-lg-4 mt-2">
+              <div class="card">
+                <img
+                  height="230px"
+                  src="images/mbappe.jpeg"
+                  class="card-img-top"
+                  alt="messi"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-center fw-bolder">Mbappe</h5>
+                  <a href="#" class="btn btn-primary d-block mx-auto" onclick="addToList(this)">add</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mt-2">
+              <div class="card">
+                <img
+                  height="230px"
+                  src="images/hossain bolt.jpg"
+                  class="card-img-top"
+                  alt="messi"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-center fw-bolder">Hossain Bolt</h5>
+                  <a href="#" class="btn btn-primary d-block mx-auto" onclick="addToList(this)">add</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mt-2">
+              <div class="card">
+                <img
+                  height="230px"
+                  src="images/messi.jpg"
+                  class="card-img-top"
+                  alt="messi"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-center fw-bolder">Lionel Messi</h5>
+                  <a href="#" class="btn btn-primary d-block mx-auto" onclick="addToList(this)">add</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mt-2">
+              <div class="card">
+                <img
+                  height="230px"
+                  src="images/mushfiqur rahim.jpg"
+                  class="card-img-top"
+                  alt="messi"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-center fw-bolder">Mushfiqur Rahim</h5>
+                  <a href="#" class="btn btn-primary d-block mx-auto" onclick="addToList(this)">add</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mt-2">
+              <div class="card">
+                <img
+                  height="230px"
+                  src="images/neymar.jpg"
+                  class="card-img-top"
+                  alt="messi"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-center fw-bolder">Neymar JR</h5>
+                  <a href="#" class="btn btn-primary d-block mx-auto" onclick="addToList(this)">add</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mt-2">
+              <div class="card">
+                <img
+                  height="230px"
+                  src="images/ronaldo.jpg"
+                  class="card-img-top"
+                  alt="messi"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-center fw-bolder">Cristiano Ronaldo</h5>
+                  <a href="#" class="btn btn-primary d-block mx-auto" onclick="addToList(this)">add</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- player details -->
+        <div class="col-lg-4">
+          <!-- player name -->
+          <div class="card bg-black text-white mt-2 p-3">
+            <h1>Select player</h1>
+            <ol>
+              <li id="first-li"></li>
+              <li id="second-li"></li>
+              <li id="third-li"></li>
+              <li id="fourth-li"></li>
+              <li id="fifth-li"></li>
+              <li id="sixth-li"></li>
+            </ol>
+          </div>
+          <!-- budget -->
+          <div class="card text-secondary bg-black fw-semibold mt-2 p-3">
+            <h1 class="text-center">Budget</h1>
+            <label for="">per player:<input type="text" /> <br /></label>
+  
+            <button class="btn btn-outline-info">Calculate</button>
+            <h4>player Expenses: <span>00</span></h4>
+            <h4 for="">manager:<input type="text" /></h4>
+  
+            <h4 for="">coach:<input type="text" /></h4>
+  
+            <button class="btn btn-outline-info">Calculate Total</button>
+            <h2>Total: <span>00</span></h2>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-dark p-5 text-white fw-semibold text-center mt-5">
+      <p>Copyright @ 2022 All Rights Reserved.</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
