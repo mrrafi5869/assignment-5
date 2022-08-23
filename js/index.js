@@ -44,13 +44,15 @@ document.getElementById("per-player-btn").addEventListener("click", function() {
     const perPlayerInput = document.getElementById("per-player-input");
     const perPlayerInputString = perPlayerInput.value;
     const perPlayerInputNumber = parseInt(perPlayerInputString);
-
+    if(isNaN(perPlayerInput)){
+            alert("please enter a valid number")
+        }
 
     const playersName = document.getElementById("players-name");
     const playersNameChild = playersName.children.length;
 
     const cost = playersNameChild * perPlayerInputNumber;
-
+    
     totalCost("players-expenses", cost)
 });
 
