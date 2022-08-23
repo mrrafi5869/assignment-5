@@ -1,3 +1,4 @@
+// player section
 const listArray = [];
 
 function display(playerList) {
@@ -25,12 +26,23 @@ function display(playerList) {
 function addToList (element) {
     const parentElement = element.parentNode.children[0].innerText;
     
-    // const listObj = {
-    //     parentElement: parentElement
-    // }
-    
     listArray.push(parentElement);
     display(listArray);
 }
 
 
+// budget section starts here
+
+document.getElementById("per-player-btn").addEventListener("click", function() {
+    const perPlayerInput = document.getElementById("per-player-input");
+    const perPlayerInputString = perPlayerInput.value;
+    const perPlayerInputNumber = parseInt(perPlayerInputString);
+
+
+    const playersName = document.getElementById("players-name");
+    const playersNameChild = playersName.children.length;
+
+    const cost = playersNameChild * perPlayerInputNumber;
+
+    
+})
