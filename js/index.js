@@ -5,6 +5,11 @@ function display(playerList) {
     const playersName = document.getElementById("players-name");
     playersName.innerText = ""
     const length = listArray.length;
+
+    if (length > 5) {
+        alert('you can not select more than 5 players');
+    }
+    
     for(let i = 0; i < length; i++) {
         
         const name = playerList[i];
@@ -15,10 +20,6 @@ function display(playerList) {
         playersName.appendChild(li);
         
     }
-    if(length > 5){
-        alert("you can select only 5 players");
-    }
-
 
 }
 
@@ -28,7 +29,11 @@ function addToList (element) {
     element.disabled = true;
     listArray.push(parentElement);
     display(listArray);
+    const length = listArray.length;
 
+    if(length > 5){
+        element.disabled = false;
+    }
     
 }
 

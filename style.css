@@ -22,3 +22,7 @@ input {
     float: right;
     margin-bottom: 20px;
 }
+
+.button-style{
+    width: 100px;
+}
