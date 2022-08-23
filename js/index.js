@@ -2,10 +2,9 @@
 const listArray = [];
 
 function display(playerList) {
-    console.log(playerList);
     const playersName = document.getElementById("players-name");
     playersName.innerText = ""
-    const length = listArray.length
+    const length = listArray.length;
     for(let i = 0; i < length; i++) {
         
         const name = playerList[i];
@@ -16,18 +15,21 @@ function display(playerList) {
         playersName.appendChild(li);
         
     }
-
     if(length > 5){
         alert("you can select only 5 players");
     }
+
+
 }
 
 
 function addToList (element) {
     const parentElement = element.parentNode.children[0].innerText;
-    
+    element.disabled = true;
     listArray.push(parentElement);
     display(listArray);
+
+    
 }
 
 
@@ -44,5 +46,24 @@ document.getElementById("per-player-btn").addEventListener("click", function() {
 
     const cost = playersNameChild * perPlayerInputNumber;
 
+    totalCost("players-expenses", cost)
+});
+
+// total calculation
+document.getElementById("calculate-total").addEventListener('click',function () {
+    const perPlayerInput = document.getElementById("per-player-input");
+    const perPlayerInputString = perPlayerInput.value;
+    const perPlayerInputNumber = parseInt(perPlayerInputString);    
     
+    const manager = document.getElementById("manager");
+    const managerString = manager.value;
+    const managerNumber = parseInt(managerString);
+
+    const coach = document.getElementById('coach');
+    const coachString = coach.value;
+    const coachNumber = parseInt(coachString);
+
+    const totalCostNumber =perPlayerInputNumber + managerNumber + coachNumber;
+
+    totalCost("total", totalCostNumber)
 })

@@ -58,7 +58,7 @@
                 />
                 <div class="card-body">
                   <h5 class="card-title text-center fw-bolder">Mbappe</h5>
-                  <a href="#" class="btn btn-primary d-block mx-auto" onclick="addToList(this)">add</a>
+                  <button class="btn btn-primary d-block mx-auto" onclick="addToList(this)">add</button>
                 </div>
               </div>
             </div>
@@ -72,7 +72,7 @@
                 />
                 <div class="card-body">
                   <h5 class="card-title text-center fw-bolder">Hossain Bolt</h5>
-                  <a href="#" class="btn btn-primary d-block mx-auto" onclick="addToList(this)">add</a>
+                  <button class="btn btn-primary d-block mx-auto" onclick="addToList(this)">add</button>
                 </div>
               </div>
             </div>
@@ -86,7 +86,7 @@
                 />
                 <div class="card-body">
                   <h5 class="card-title text-center fw-bolder">Lionel Messi</h5>
-                  <a href="#" class="btn btn-primary d-block mx-auto" onclick="addToList(this)">add</a>
+                  <button class="btn btn-primary d-block mx-auto" onclick="addToList(this)">add</button>
                 </div>
               </div>
             </div>
@@ -101,7 +101,7 @@
                 />
                 <div class="card-body">
                   <h5 class="card-title text-center fw-bolder">Mushfiqur Rahim</h5>
-                  <a href="#" class="btn btn-primary d-block mx-auto" onclick="addToList(this)">add</a>
+                  <button class="btn btn-primary d-block mx-auto" onclick="addToList(this)">add</button>
                 </div>
               </div>
             </div>
@@ -116,7 +116,7 @@
                 />
                 <div class="card-body">
                   <h5 class="card-title text-center fw-bolder">Neymar JR</h5>
-                  <a href="#" class="btn btn-primary d-block mx-auto" onclick="addToList(this)">add</a>
+                  <button class="btn btn-primary d-block mx-auto" onclick="addToList(this)">add</button>
                 </div>
               </div>
             </div>
@@ -131,7 +131,7 @@
                 />
                 <div class="card-body">
                   <h5 class="card-title text-center fw-bolder">Cristiano Ronaldo</h5>
-                  <a href="#" class="btn btn-primary d-block mx-auto" onclick="addToList(this)">add</a>
+                  <button class="btn btn-primary d-block mx-auto" onclick="addToList(this)">add</button>
                 </div>
               </div>
             </div>
@@ -152,13 +152,13 @@
             <label for="">per player:<input id="per-player-input" type="text" /> <br /></label>
   
             <button id="per-player-btn" class="btn btn-outline-info">Calculate</button>
-            <h4>player Expenses: <span>00</span></h4>
-            <h4 for="">manager:<input type="text" /></h4>
+            <h4>player Expenses: <span id="players-expenses">00</span></h4>
+            <h4 for="">manager:<input id="manager" type="text" /></h4>
   
-            <h4 for="">coach:<input type="text" /></h4>
+            <h4 for="">coach:<input id="coach" type="text" /></h4>
   
-            <button class="btn btn-outline-info">Calculate Total</button>
-            <h2>Total: <span>00</span></h2>
+            <button id="calculate-total" class="btn btn-outline-info">Calculate Total</button>
+            <h2>Total: <span id="total">00</span></h2>
           </div>
         </div>
       </div>
@@ -172,5 +172,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/index.js"></script>
+    <script src="js/utilities.js"></script>
   </body>
 </html>
