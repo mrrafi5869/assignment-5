@@ -44,7 +44,7 @@ document.getElementById("per-player-btn").addEventListener("click", function() {
     const perPlayerInput = document.getElementById("per-player-input");
     const perPlayerInputString = perPlayerInput.value;
     const perPlayerInputNumber = parseInt(perPlayerInputString);
-    if(isNaN(perPlayerInput)){
+    if(isNaN(perPlayerInputNumber)){
             alert("please enter a valid number")
         }
 
