@@ -58,10 +58,10 @@ document.getElementById("per-player-btn").addEventListener("click", function() {
 
 // total calculation
 document.getElementById("calculate-total").addEventListener('click',function () {
-    const perPlayerInput = document.getElementById("per-player-input");
-    const perPlayerInputString = perPlayerInput.value;
-    const perPlayerInputNumber = parseInt(perPlayerInputString);    
-    
+    const playersExpenses = document.getElementById("players-expenses");
+    const playersExpensesString = playersExpenses.innerText;
+    const playersExpensesNumber = parseInt(playersExpensesString)
+
     const manager = document.getElementById("manager");
     const managerString = manager.value;
     const managerNumber = parseInt(managerString);
@@ -70,7 +70,7 @@ document.getElementById("calculate-total").addEventListener('click',function () 
     const coachString = coach.value;
     const coachNumber = parseInt(coachString);
 
-    const totalCostNumber =perPlayerInputNumber + managerNumber + coachNumber;
+    const totalCostNumber =playersExpensesNumber + managerNumber + coachNumber;
 
     totalCost("total", totalCostNumber)
 })
